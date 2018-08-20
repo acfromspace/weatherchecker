@@ -8,6 +8,7 @@ class Weather extends Component {
                 <p>Temperature: {this.props.temperature}</p>
                 <p>Humidity: {this.props.humidity}</p>
                 <p>Description: {this.props.description}</p>
+                {/* Wind speed perhaps? */}
             </div>
         );
     }
