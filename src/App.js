@@ -1,26 +1,71 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-import Titles from './components/Titles';
-import Form from './components/Form';
-import Weather from './components/Weather';
-import { userInfo } from 'os';
+import Titles from "./components/Titles";
+import Form from "./components/Form";
+import Weather from "./components/Weather";
 
 // Create an instance of the application that creates a component via React
 
-const API_KEY = '3d0ef9639326e8f751a89d6ef01a91bf';
+const API_KEY = "3d0ef9639326e8f751a89d6ef01a91bf";
 
-class App extends React.Component {
+class App extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     // deprecated, old way to do this
+  //   }
+  // }
+  state = {
+    temperature: undefined,
+    city: undefined,
+    country: undefined,
+    humidity: undefined,
+    description: undefined,
+    error: undefined
+  };
   // One can put their own methods here
   // JSON = Javascript Object Notation
-  getWeather = async () => {
-    const API_CALL = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
-    const data =  await API_CALL.json();
-    console.log(data);
-  }
+  getWeather = async e => {
+    // Prevent the default behavior of this component
+    e.preventDefault();
+    // Input from the user
+    const city = e.target.elements.city.value;
+    const country = e.target.elements.country.value;
+    // Variable that makes the call to the URL
+    const API_CALL = await fetch(
+      `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
+    );
+    // Convert the response from the URL to json format (json is a universal accepted language)
+    const data = await API_CALL.json();
+    // If both return true, then render the code
+    if (city && country) {
+      // // Display the data
+      // console.log(data);
+      // Have the state variables equal to the proper data calls
+      // This is how to manipulate APIs
+      this.setState({
+        temperature: data.main.temp,
+        city: data.name,
+        country: data.sys.country,
+        humidity: data.main.humidity,
+        // In this API, it uses an array for the description
+        description: data.weather[0].description,
+        error: ""
+      });
+    } else {
+      this.setState({
+        temperature: undefined,
+        city: undefined,
+        country: undefined,
+        humidity: undefined,
+        description: undefined,
+        error: "Please enter the value."
+      });
+    }
+  };
 
-  // Before one had to do this to properly bind the function React version < 16.0
+  // Back in time, one had to do this to properly bind the function React version < 16.0
   // constructor() {
   //   this.getWeather = this.getWeather.bind(this);
   // }
@@ -29,9 +74,16 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Titles/>
-        <Form/>
-        <Weather/>
+        <Titles />
+        <Form getWeather={this.getWeather} />
+        <Weather
+          temperature={this.state.temperature}
+          city={this.state.city}
+          country={this.state.country}
+          humidity={this.state.humidity}
+          description={this.state.description}
+          error={this.state.error}
+        />
       </div>
       // <div className="App">
       //   <header className="App-header">
