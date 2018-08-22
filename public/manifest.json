@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "(Weather Checker)",
+  "name": "Whether it be ☀️ or 🌧️, find out!",
   "icons": [
     {
       "src": "favicon.ico",

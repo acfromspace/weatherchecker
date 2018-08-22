@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 body {
@@ -30,27 +30,31 @@ body {
   background-size: cover;
   display: flex;
   /* Adjusts the items to be displayed at the top */
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
   color: #000;
 }
 
+/* Title */
 .title-container__title {
-  font-size: 50px;
-  letter-spacing: 2px;
+  padding-top: 4em;
+  font-size: 40px;
+  letter-spacing: 4px;
   line-height: 1.3;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Kosugi Maru', serif;
 }
 
+/* Title */
 .title-container__subtitle {
-  font-style: italic;
-  font-weight: 100;
+  /* font-style: italic; */
+  font-weight: 50;
   letter-spacing: 1px;
   line-height: 1.5;
-  font-family: "Merriweather", serif;
+  font-family: "Kosugi Maru", serif;
 }
 
+/* Title */
 .form-container {
   background-color: #3a595c;
   height: 90vh;
@@ -97,13 +101,23 @@ button:active {
   outline: none;
 }
 
+/* Text above the input form and button */
+.form__prompt {
+  color: #bcd9d7;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: 'Kosugi Maru', serif;
+}
+
+/* All the weather info! */
 .weather__info {
-  width: 60%;
+  width: 90%;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 2px;
 }
 
+/* Information key before showing the information */
 .weather__key {
   color: #bcd9d7;
   border-bottom: solid 2px rgba(255,255,255,0.06);
@@ -115,11 +129,13 @@ button:active {
   border: 0;
 }
 
+/* Information that is displayed right after the descriptor */
 .weather__value {
   color: #fff;
   font-weight: 200;
 }
 
+/* Error */
 .weather__error {
   color: #bcd9d7;
   font-size: 20px;
