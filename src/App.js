@@ -37,8 +37,9 @@ class App extends Component {
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
     // Variable that makes the call to the URL
+    // REMEMBER TO USE "HTTPS" BECAUSE BROWSERS WILL BLOCK YOU FOR BEING UNSAFE
     const API_CALL = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
     );
     // Convert the response from the URL to json format (json is a universal accepted language)
     const data = await API_CALL.json();
