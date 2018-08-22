@@ -6,6 +6,7 @@ import Form from "./components/Form";
 import Weather from "./components/Weather";
 
 // Create an instance of the application that creates a component via React
+// Should hide in an .env file
 
 const API_KEY = "3d0ef9639326e8f751a89d6ef01a91bf";
 
@@ -22,6 +23,9 @@ class App extends Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
+    wind: undefined,
+    latitude: undefined,
+    longitude: undefined,
     error: undefined
   };
   // One can put their own methods here
@@ -41,7 +45,7 @@ class App extends Component {
     // If both return true, then render the code
     if (city && country) {
       // // Display the data
-      // console.log(data);
+      console.log(data);
       // Have the state variables equal to the proper data calls
       // This is how to manipulate APIs
       this.setState({
@@ -51,6 +55,9 @@ class App extends Component {
         humidity: data.main.humidity,
         // In this API, it uses an array for the description
         description: data.weather[0].description,
+        wind: data.wind.speed,
+        latitude: data.coord.lat,
+        longitude: data.coord.lon,
         error: ""
       });
     } else {
@@ -60,6 +67,9 @@ class App extends Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
+        wind: undefined,
+        latitude: undefined,
+        longitude: undefined,
         error: "Please enter the value."
       });
     }
@@ -74,16 +84,34 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Titles />
-        <Form getWeather={this.getWeather} />
-        <Weather
-          temperature={this.state.temperature}
-          city={this.state.city}
-          country={this.state.country}
-          humidity={this.state.humidity}
-          description={this.state.description}
-          error={this.state.error}
-        />
+        <div className="wrapper">
+          <div className="main">
+            <div className="container">
+              <div className="row">
+                {/* 5 columns on the left hand side */}
+                {/* to see what the styling titles do (for ex: title container) looks at App.css */}
+                <div className="col-xs-5 title-container">
+                  <Titles />
+                </div>
+                {/* 7 columns on the right hand side */}
+                <div className="col-xs-7 form-container">
+                  <Form getWeather={this.getWeather} />
+                  <Weather
+                    temperature={this.state.temperature}
+                    humidity={this.state.humidity}
+                    city={this.state.city}
+                    country={this.state.country}
+                    description={this.state.description}
+                    wind={this.state.wind}
+                    latitude={this.state.latitude}
+                    longitude={this.state.longitude}
+                    error={this.state.error}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       // <div className="App">
       //   <header className="App-header">

@@ -1,28 +1,144 @@
-/* .App {
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+/* Controls the whole background screen */
+.wrapper {
+  background: linear-gradient(to right, #7ba9a9, #3a595c);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Controls where the application is being displayed */
+.main {
+  height: 90vh;
+  background: #bcd9d7;
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  margin: 0 auto;
+}
+
+/* Controls the area for the title */
+.title-container {
+  height: 90vh;
+  background: url("img/bg.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  /* Adjusts the items to be displayed at the top */
+  align-items: flex-start;
+  justify-content: center;
   text-align: center;
+  color: #000;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* Title */
+.title-container__title {
+  padding-top: 4em;
+  font-size: 40px;
+  letter-spacing: 4px;
+  line-height: 1.3;
+  font-family: 'Kosugi Maru', serif;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* Title */
+.title-container__subtitle {
+  /* font-style: italic; */
+  font-weight: 50;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: "Kosugi Maru", serif;
 }
 
-.App-title {
-  font-size: 1.5em;
+/* Title */
+.form-container {
+  background-color: #3a595c;
+  height: 90vh;
+  padding-top: 100px;
+  padding-left: 50px;
 }
 
-.App-intro {
-  font-size: large;
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #bcd9d7;
+  width: 30%;
+  padding-bottom: 4px;
+  color: #fff !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
+input[type="text"] { 
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #3a595c inset;
+    -webkit-text-fill-color: #fff !important;
+}
+
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #bcd9d7
+}
+
+button:active {
+  outline: none;
+}
+
+/* Text above the input form and button */
+.form__prompt {
+  color: #bcd9d7;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: 'Kosugi Maru', serif;
+}
+
+/* All the weather info! */
+.weather__info {
+  width: 90%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+/* Information key before showing the information */
+.weather__key {
+  color: #bcd9d7;
+  border-bottom: solid 2px rgba(255,255,255,0.06);
+  padding: 20px 0 20px 0;
+  font-weight: 400;
+}
+
+.weather__key:last-child {
+  border: 0;
+}
+
+/* Information that is displayed right after the descriptor */
+.weather__value {
+  color: #fff;
+  font-weight: 200;
+}
+
+/* Error */
+.weather__error {
+  color: #bcd9d7;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
