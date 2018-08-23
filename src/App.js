@@ -8,7 +8,9 @@ import Weather from "./components/Weather";
 // Create an instance of the application that creates a component via React
 // Should hide in an .env file
 
-const API_KEY = "3d0ef9639326e8f751a89d6ef01a91bf";
+require('dotenv').config()
+
+let OPEN_WEATHER_ID = process.env.REACT_APP_OPEN_WEATHER_ID;
 
 class App extends Component {
   // constructor(props) {
@@ -39,7 +41,7 @@ class App extends Component {
     // Variable that makes the call to the URL
     // REMEMBER TO USE "HTTPS" BECAUSE BROWSERS WILL BLOCK YOU FOR BEING UNSAFE
     const API_CALL = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${OPEN_WEATHER_ID}&units=metric`
     );
     // Convert the response from the URL to json format (json is a universal accepted language)
     const data = await API_CALL.json();
@@ -47,6 +49,7 @@ class App extends Component {
     if (city && country) {
       // // Display the data
       console.log(data);
+      console.log(process.env.REACT_APP_OPEN_WEATHER_ID)
       // Have the state variables equal to the proper data calls
       // This is how to manipulate APIs
       this.setState({
