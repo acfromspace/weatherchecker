@@ -23,7 +23,7 @@
 
 <!-- FEATURES -->
 
-![Weather Checker Demo](https://thumbs.gfycat.com/HiddenVibrantCowbird-size_restricted.gif)
+![hiddenvibrantcowbird](https://user-images.githubusercontent.com/10361542/44634635-24399a00-a951-11e8-9f01-2a6c0687042e.gif)
 
 <!-- INSTALLATION -->
 
