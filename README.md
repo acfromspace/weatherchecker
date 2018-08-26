@@ -10,30 +10,24 @@
 <!-- DESCRIPTION -->
 
 <h3 align="center">
-  ⏳
+  <span role="img" aria-label="Satellite">🛰️</span>🛰
 </h3>
 <p align="center">
   <strong>Weather application.</strong><br>
-  Created with React to interact with APIs.
+  Created with React to interact with Open Weather API and Bootstrap.
 </p>
 
 <!-- INFORMATION (Shields:IO) -->
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/acfromspace/timestone/blob/master/LICENSE) ![Location](https://img.shields.io/badge/location-compromised%20by%20Thanos-red.svg)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/acfromspace/timestone/blob/master/LICENSE)
 
 <!-- FEATURES -->
 
-*weatherchecker* is a:
-
-<!-- - **Blazing fast loading thanks to Gatsby.** Get all the benefits of static websites with none of the limitations. Gatsby sites are fully functional React apps, so you can create high-quality, dynamic web apps, from blogs to ecommerce sites to user dashboards.
-
-- **Customizability.** Within the "src" folder, all adaptable files to be made by the user are available. One can even go further to possibly add in aesthetic javascript node packages to add visuals.
-
-- **Hosted with Netlify.** Don't get me wrong, GitHub Pages offers great utility for first timers, but as I experienced more with web hosts, I needed something more reliable and easier to use. Netlify offers both web-based and command-line interfaces in order to adapt to an extremely easy and intuitive user interface dependent on the user. -->
+<img src="./src/img/weatherchecker.gif">
 
 <!-- INSTALLATION -->
 
-## 🚀 Installation
+## 🚀 Quick Installation
 
 Coming soon!
 
@@ -43,24 +37,19 @@ Coming soon!
 
 Coming soon!
 
-<!-- A quick look at the top-level files and directories you'll see in this Gatsby project.
+A quick look at the top-level files and directories you'll see in this React project.
 
-       .
-    1  ├── node_modules
-    2  ├── src
-    3  ├── static
-    4  ├── .babelrc
-    5  ├── .gitignore
-    6  ├── .prettierrc
-    7  ├── .travis.yml
-    8  ├── gatsby-config.js
-    9  ├── gatsby-node.js
-    10 ├── LICENSE
-    11 ├── package-lock.json
-    12 ├── package.json
-    13 └── README.md
+      .
+    1 ├── node_modules
+    2 ├── public
+    3 ├── src
+    4 ├── .editorconfig
+    5 ├── .gitignore
+    6 ├── LICENSE
+    7 ├── package.json
+    8 └── README.md
 
-  1.  **`/node_modules`**: The directory where all of the modules of  code that your project depends on (npm packages) are automatically installed.  
+  <!-- 1.  **`/node_modules`**: The directory where all of the modules of  code that your project depends on (npm packages) are automatically installed.  
   
   2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser), like your site header, or a page template. “Src” is a convention for “source code”.
 
@@ -84,7 +73,7 @@ Coming soon!
   
   12.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
   
-  13.  **`README.md`**: A text file containing useful reference information about your project. The one you're reading right now! -->
+  13.  **`README.md`**: A text file containing useful reference information about your project. The one you're reading right now! --> -->
 
 <!-- LICENSE -->
 
