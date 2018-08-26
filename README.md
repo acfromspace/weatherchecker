@@ -10,7 +10,7 @@
 <!-- DESCRIPTION -->
 
 <h3 align="center">
-  <span role="img" aria-label="Satellite">🛰️</span>🛰
+  <span role="img" aria-label="Satellite">🛰️</span>
 </h3>
 <p align="center">
   <strong>Weather application.</strong><br>
@@ -23,7 +23,7 @@
 
 <!-- FEATURES -->
 
-![Weather Checker Demo](https://gfycat.com/HiddenVibrantCowbird)
+![Weather Checker Demo](https://thumbs.gfycat.com/HiddenVibrantCowbird-size_restricted.gif)
 
 <!-- INSTALLATION -->
 
