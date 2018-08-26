@@ -1,4 +1,4 @@
-// Deals with testing
+// Tests that the App React component can render without breaking down immediately
 
 import React from "react";
 import ReactDOM from "react-dom";
