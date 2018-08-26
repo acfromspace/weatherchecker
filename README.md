@@ -23,7 +23,7 @@
 
 <!-- FEATURES -->
 
-<img src="./src/img/weatherchecker.gif">
+![Weather Checker Demo](https://gfycat.com/HiddenVibrantCowbird)
 
 <!-- INSTALLATION -->
 
