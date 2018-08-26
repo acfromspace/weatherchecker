@@ -1,11 +1,11 @@
 <!-- HEADING -->
 
-<!-- <p align="center">
-  <img src="./static/icons/icon-512x512.png" width="60">
+<p align="center">
+  <img src="./src/img/avatar.png" width="60">
 </p>
 <h1 align="center">️
-  timestone
-</h1> -->
+  weatherchecker
+</h1>
 
 <!-- DESCRIPTION -->
 

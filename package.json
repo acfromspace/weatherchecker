@@ -1,5 +1,5 @@
 {
-  "name": "realitystone",
+  "name": "weatherchecker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,7 @@
     "prettier": "^1.14.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
