@@ -23,7 +23,7 @@
 
 <!-- FEATURES -->
 
-![weatherchecker](https://user-images.githubusercontent.com/10361542/44685297-fd866c80-a9ff-11e8-93e7-6f7f8dab7d00.gif)
+![weatherchecker](https://user-images.githubusercontent.com/10361542/44685623-bc428c80-aa00-11e8-885c-c97574be6036.gif)
 
 <!-- INSTALLATION -->
 
