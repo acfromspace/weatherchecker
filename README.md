@@ -24,6 +24,7 @@
 <!-- FEATURES -->
 
 ![weatherchecker](https://user-images.githubusercontent.com/10361542/44685623-bc428c80-aa00-11e8-885c-c97574be6036.gif)
+![weathercheckerps](https://user-images.githubusercontent.com/10361542/44686519-64595500-aa03-11e8-9155-691d0fcc6e1b.gif)
 
 <!-- INSTALLATION -->
 
