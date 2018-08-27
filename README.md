@@ -23,8 +23,7 @@
 
 <!-- FEATURES -->
 
-![hiddenvibrantcowbird](https://user-images.githubusercontent.com/10361542/44634635-24399a00-a951-11e8-9f01-2a6c0687042e.gif)
-![weather-redesign-v2](https://cloud.githubusercontent.com/assets/2805320/10529403/5f098278-73a6-11e5-9e9d-807daa26762c.gif)
+Coming soon!
 
 <!-- INSTALLATION -->
 
