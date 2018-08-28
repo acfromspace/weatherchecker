@@ -30,9 +30,11 @@
 
 <!-- FEATURES -->
 
-![weatherchecker0.3](https://user-images.githubusercontent.com/10361542/44686519-64595500-aa03-11e8-9155-691d0fcc6e1b.gif)
+<p align="center">
+  <img src="./src/img/demo.gif">
+</p>
 
-*weatherchecker* is a weather application with the following features:
+[*weatherchecker*](https://weatherchecker.netlify.com) is a weather application with the following features:
 
 - **Calls to the Open Weather API.** The [Open Weather API](https://openweathermap.org/api) is simple, clear and free for those wanting to seek data of weather forecasts whether it be current forecasts, 5 days, or even 16 days. There are other available APIs so check them out!
 
