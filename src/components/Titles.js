@@ -1,10 +1,20 @@
 import React from "react";
 
 const Titles = () => (
-	<div>
-		<h1 className="title-container__title">(Weather Checker)</h1>
-		<h3 className="title-container__subtitle">Whether it be <span role="img" aria-label="Sun">☀️</span> or <span role="img" aria-label="Cloud With Rain">🌧️</span>, find out!</h3>
-	</div>
+    <div>
+        <h1 className="title-container__title">(Weather Checker)</h1>
+        <h3 className="title-container__subtitle">
+            Whether it be{" "}
+            <span role="img" aria-label="Sun">
+                ☀️
+            </span>{" "}
+            or{" "}
+            <span role="img" aria-label="Cloud With Rain">
+                🌧️
+            </span>
+            , find out!
+        </h3>
+    </div>
 );
 
 export default Titles;
