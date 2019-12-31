@@ -15,15 +15,14 @@
   Created with <a href="https://reactjs.org/" target="_blank">React.js</a> to interact with <a href="https://openweathermap.org/api" target="_blank">Open Weather API</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.
 </p>
 
-<!-- INFORMATION (Shields:IO) -->
+<!-- BADGES -->
 
 <p align="center">
     <a href="https://github.com/acfromspace/weatherchecker/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/mashape/apistatus.svg"
             alt="License: MIT"></a>
-    <a href="https://twitter.com/intent/follow?screen_name=acfromspace">
-        <img src="https://img.shields.io/twitter/follow/acfromspace.svg?style=social&logo=twitter"
-            alt="Follow @acfromspace"></a>
+    <a href="https://www.repostatus.org/#unsupported">
+        <img src="https://www.repostatus.org/badges/latest/unsupported.svg" alt="Project Status: Unsupported – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired." /></a>
 </p>
 
 <!-- FEATURES -->
