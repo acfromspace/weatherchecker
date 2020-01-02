@@ -6,10 +6,6 @@
 # Testing.
 /coverage
 
-# Production.
-/build
-/public
-
 # Misc.
 .DS_Store
 .env
