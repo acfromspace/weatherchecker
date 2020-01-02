@@ -6,7 +6,7 @@ body {
   font-family: "Open Sans", serif;
 }
 
-/* Controls the whole background screen */
+/* Controls the whole background screen. */
 .wrapper {
   background: linear-gradient(to right, #7ba9a9, #3a595c);
   height: 100vh;
@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 
-/* Controls where the application is being displayed */
+/* Controls where the application is being displayed. */
 .main {
   height: 90vh;
   background: #bcd9d7;
@@ -23,20 +23,20 @@ body {
   margin: 0 auto;
 }
 
-/* Controls the area for the title */
+/* Controls the area for the title. */
 .title-container {
   height: 90vh;
   background: url("img/bg.jpg") center center no-repeat;
   background-size: cover;
   display: flex;
-  /* Adjusts the items to be displayed at the top */
+  /* Adjusts the items to be displayed at the top. */
   align-items: flex-start;
   justify-content: center;
   text-align: center;
   color: #000;
 }
 
-/* Title */
+/* Title. */
 .title-container__title {
   padding-top: 4em;
   font-size: 40px;
@@ -45,7 +45,7 @@ body {
   font-family: "Kosugi Maru", serif;
 }
 
-/* Title */
+/* Title. */
 .title-container__subtitle {
   /* font-style: italic; */
   font-weight: 50;
@@ -54,7 +54,7 @@ body {
   font-family: "Kosugi Maru", serif;
 }
 
-/* Title */
+/* Title. */
 .form-container {
   background-color: #3a595c;
   height: 90vh;
@@ -101,7 +101,7 @@ button:active {
   outline: none;
 }
 
-/* Text above the input form and button */
+/* Text above the input form and button. */
 .form__prompt {
   color: #bcd9d7;
   font-size: 20px;
@@ -117,7 +117,7 @@ button:active {
   letter-spacing: 2px;
 }
 
-/* Information key before showing the information */
+/* Information key before showing the information. */
 .weather__key {
   color: #bcd9d7;
   border-bottom: solid 2px rgba(255, 255, 255, 0.06);
@@ -129,13 +129,13 @@ button:active {
   border: 0;
 }
 
-/* Information that is displayed right after the descriptor */
+/* Information that is displayed right after the descriptor. */
 .weather__value {
   color: #fff;
   font-weight: 200;
 }
 
-/* Error */
+/* Error. */
 .weather__error {
   color: #bcd9d7;
   font-size: 20px;
