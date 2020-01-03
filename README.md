@@ -43,7 +43,7 @@
 
 ## <span role="img" aria-label="Sparkles">✨</span> Quick Installation
 
-```
+```sh
 git clone https://github.com/acfromspace/weatherchecker
 cd weatherchecker
 yarn
